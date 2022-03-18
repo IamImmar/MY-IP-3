@@ -15,7 +15,7 @@ A photo studio website which gives you a chance to collaborate with them or empl
 ---
 
 
-### Installation
+### Installation 
 For you to clone this repository:
 
 #### Requirements
