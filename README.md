@@ -24,8 +24,8 @@ For you to clone this repository:
 -Desktop
 -Internet connection
 
-##### Installation process
-[Live link](https://iamimmar.github.io/MY-IP-3/)
+##### Installation processli
+[live link](https://iamimmar.github.io/MY-IP-3/)
 ---
 
 ###### Technology used
