@@ -15,11 +15,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-    <script src="js/jquery.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Immar Studios</title>
 
 </head>
 <script>
+$("document").ready(function() {
+    $("button").click(function(){
+        $("#div1").fadeToggle();
+    });
+    
+
+    $("button").click(function(){   
+        $("#div2").fadeToggle();
+    });
+
+    $("button").click(function(){
+        $("#div3").fadeToggle();
+    }); 
+});
+
+    
+    
 
 </script>
 <style>
@@ -104,6 +121,90 @@
 }
 
 </style>
+<style>
+
+.container {
+    position: relative;
+} 
+
+.image {
+    opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.container:hover .image2 {
+  opacity: 0.3;
+}
+
+.container:hover .middle2 {
+  opacity: 1;
+}
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text2 {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text3 {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text4 {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text5 {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.text6 {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+</style>
  
   <body>
 <!--Navbar-->
@@ -159,7 +260,7 @@
     data-bs-toggle="modal"
     data-bs-target="#join"
     >
-    Join The Team
+    Work with us
 </button>
 
 </div>
@@ -211,132 +312,175 @@
 </section>
 
 <!--WHAT WE DO-->
-    <section  class="p-5">
-    <div class="container">
-    <div class="row text-center">
-    
-      <h1>WHAT WE DO</h1>
-    <div class="col-md">
-    <div class="card bg-dark text-light">
-    <div class="card-body text-center"> 
-    <div class="h1 mb-3">   
-    <i class="bi bi-laptop"></i>
+<section class="p-5">
+  <div class="container">
+    <div class="text-center">
+    <h1>WHAT WE DO</h1>
     </div>
+     <div class="row text-center">
+        <div class="col-md">
+           <div class="card bg-dark text-light">
+             <div class="card-body text-center">
+                <div class="h1 mb-3">
+                      
+                 <button><i class="bi bi-laptop"></i></button>
+                </div>
+            <h3 class="card-title mb-3">DESIGN</h3>
+            <div id="div1">
+                    <p class="card-text"> 
+                    Our design practice offers a full range of services<br>
+                    including brand strategy, interaction and visual design<br>
+                    and user experience testing.<br>
+                    Throughout your project, our designers create and<br>
+                    implement visual design and workflows, solicit user<br>
+                    feedback and work with you to make sure what gets built<br>
+                    is what is needed.
+            </div>
+                    
+                </div>
+                </div>
+                 </div>
+           
+           <div class="col-md">
+            <div class="card bg-secondary text-light">
+                <div class="card-body text-center">
+                   <div class="h1 mb-3">    
+                    <button><i class="bi bi-person-square"></i></button>
+                   </div>
+               <h3 class="card-title mb-3">DEVELOPMENT</h3>
+               <div id="div2">
+                       <p class="card-text"> 
+                      All engineers are flient in the latest enterprise, mobile<br>
+                      and web development technologies.<br>
+                      They contribute with your team to write, and improve<br>
+                      code on a daily basis, using proven practices such as<br>
+                      test-driven development and pair programming.
 
-       <h3 class="card-title mb-3">
-         DESIGN
-        </h3>
-        <P class="card-text">
-        dleisbfnswddhskjdbasndljbddejsb
-        </P>
-    <a href="#" class="btn btn-primary">Read More</a>
 
-</div>
-</div>
-</div> 
+               </div>
+                       
+                   </div>
+                   </div>
+           </div>
+           <div class="col-md">
+            <div class="card bg-dark text-light">
+                <div class="card-body text-center">
+                   <div class="h1 mb-3">    
+                    <button><i class="bi bi-people"></i></button>
+                   </div>
+               <h3 class="card-title mb-3">PRODUCT MANAGEMENT</h3>
+               <div id="div3">
+                       <p class="card-text"> 
+                      Planning and development is iterative. Because we are<br>
+                      constantly coding and testing, the products we build are<br>
+                      always ready to go live.<br>
+                      This iterative process allows for changes as business<br>
+                      requirements evolve.
 
-    <div class="col-md">
-    <div class="card bg-secondary text-light">
-    <div class="card-body text-center"> 
-    <div class="h1 mb-3">   
-        <i class="bi bi-person-square"></i>
-</div>
-        <h3 class="card-title mb-3">
-             DEVELOPMENT
-        </h3>
 
-        <P class="card-text">
-            dleisbfnswddhskjdbasndljbddejsb
-        </P>
-   <a href="#" class="btn btn-dark">Read More</a>
-</div>          
-</div>
-</div> 
-             
-    <div class="col-md">
-    <div class="card bg-dark text-light">
-    <div class="card-body text-center"> 
-    <div class="h1 mb-3">   
-        <i class="bi bi-people"></i>
-                        
-</div>
-                        
-        <h3 class="card-title mb-3">
-            PRODUCT MANAGEMENT
-        </h3>
-        <P class="card-text">
-            dleisbfnswddhskjdbasndljbddejsb
-        </P>
 
-    <a href="#" class="btn btn-primary">Read More</a>
 
-</div>              
-</div>            
-</div>                
-</div>               
-</div>      
-</div>
-</div>
-</section>
+               </div>
+                       
+                   </div>
+                   </div>
+           </div>
+
+           </div>
+           </div>  
+</section>    
 
 <!--Portfolio-->
      
-    <section id="portfolo">
+    <section id="portfolo"> 
     <div class="p-5">
     <div class="container">
     <div class="row text-center">
-    <div class="container">
+    
         <h1>PORTFOLIO</h1>
-    <div class="w3-row-padding">
+    <div class="w3-row-padding"> 
     <div class="w3-third w3-container w3-margin-bottom">
+    <div class="container">   
     <img src="IMG/img7.jpeg"  style="width:350px; height:400px;"  class="w3-hover-opacity" height="480px">
     <div class="w3-container w3-white">
+    <div class="middle">
+    <div class="text">Photamora</div>    
+    </div>    
+    
+    </div>
+              
+</div>
+</div>
+        
+    <div class="w3-third w3-container w3-margin-bottom">
+    <div class="container">    
+    <img src="IMG/img8.jpeg" style="width:350px; height: 400px;" class="w3-hover-opacity">
+    <div class="w3-container w3-white">
+     <div class="middle">
+    <div class="text2">Momenta</div>     
 
+     </div>    
+
+    </div>
 </div>
-</div>
+</div> 
 
     <div class="w3-third w3-container w3-margin-bottom">
-    <img src="IMG/img8.jpeg" style="width:350px; height: 400px;" class="w3-hover-opacity">
-    <div class="w3-container w3-white"> 
-
-</div>
-</div>
-
-    <div class="w3-third w3-container">
-    <img src="IMG/img3.jpeg" alt="Norway" style="width: 350px; height: 400px;" class="w3-hover-opacity">
+     <div class="container">   
+    <img src="IMG/img3.jpeg" style="width: 350px; height: 400px;" class="w3-hover-opacity">
     <div class="w3-container w3-white">
+     <div class="middle">
+    <div class="text3">The instant</div> 
 
 </div>
 </div>
 </div>
+    </div>
           
 <!-- Second Photo Grid-->
           
     <div class="w3-row-padding">
     <div class="w3-third w3-container w3-margin-bottom">
+   <div class="container">
     <img src="IMG/img4.jpeg" style="width: 350px; height: 400px;" class="w3-hover-opacity">
-     <div class="w3-container w3-white">
-
+    <div class="w3-container w3-white">
+        <div class="middle">
+            <div class="text4">Splash</div>    
+     </div>
 </div>
-</div>
-
+</div>    
+    </div>
     <div class="w3-third w3-container w3-margin-bottom">
+     <div class="container">   
     <img src="IMG/img5.jpeg" style="width: 350px; height: 400px" class="w3-hover-opacity">
     <div class="w3-container w3-white">
+        <div class="middle">
+            <div class="text5">Sublime</div> 
 </div>
 </div>
+    </div>
+    </div>
 
     <div class="w3-third w3-container">
+     <div class="container">   
     <img src="IMG/img6.jpeg" style="width: 350px; height: 400px;" class="w3-hover-opacity">
     <div class="w3-container w3-white">
+        <div class="middle">
+            <div class="text6">Strike a pose</div>
+        </div>
+    </div>
 
 </div>
 </div>             
 </div>
 </div>
-</div>
-</div>
-</div>     
+
+
+
+    </div>
+    </div>
+    </div>
+
 </section>
 
 <!--Contact Us-->
@@ -371,11 +515,13 @@
         </div> 
     </div>  
           
-    <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label"></label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="your message here..." rows="3"></textarea>
-     </div> 
-
+    <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="exampleFormControlInput1" style="height: 100px"></textarea>
+        <label for="floatingTextarea2">Comments</label>
+      </div>
+            
+    </label>
+    
 </div>  
 </div> 
 </div>
@@ -443,11 +589,24 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button type="button" class="btn btn-primary"
+            data-bs-toggle="modal"
+            data-bs-target="#response">
+              Submit</button>
         </div>
       </div>
     </div>
   </div>
+ <!--Response-->
+ <div class="modal fade" id="response" tabindex="-1" aria-labelledby="responseLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="responseLabel">Response</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+         <p class="lead">We have received your application. Thank you for reaching out to us!</p>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
